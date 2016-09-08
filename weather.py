@@ -6,7 +6,7 @@ from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
 def get_weather(address):
-    api_key = os.enviorn.get('FORECASTIO_API_KEY')
+    api_key = os.environ.get('FORECASTIO_API_KEY')
     geolocator = Nominatim()
     location = geolocator.geocode(address)
     latitude = location.latitude
